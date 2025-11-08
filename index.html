@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Hookies - Restaurant Bord de Mer</title>
+
+<!-- Open Graph pour Discord et autres plateformes -->
+<meta property="og:title" content="Le Hookies - Restaurant Bord de Mer">
+<meta property="og:description" content="Découvrez notre restaurant au bord de la mer : cartes, formules, options pour entreprises et remises spéciales !">
+<meta property="og:url" content="https://nofilqueiv.github.io/Hookies">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://prod.cloud.rockstargames.com/ugc/gta5mission/9bvDTfTPBEujUWJ6XR-OMA/2_0.jpg">
+<meta property="og:image:width" content="480">
+<meta property="og:image:height" content="268">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Open Sans', sans-serif;}
+body {background: linear-gradient(to bottom, #01203f, #034f84); color:#fff; scroll-behavior:smooth; overflow-x:hidden;}
+a {text-decoration:none; color:inherit;}
+header {display:flex; justify-content:space-between; align-items:center; padding:15px 50px; background:rgba(1,32,63,0.95); position:fixed; width:100%; top:0; z-index:1000; box-shadow:0 4px 6px rgba(0,0,0,0.3);}
+.logo-container {display:flex; align-items:center;}
+.logo {width:50px; height:50px; margin-right:15px; object-fit:contain;}
+header h1 {color:#f0c75e; font-family:'Great Vibes', cursive; font-size:32px; cursor:pointer;}
+nav a {margin-left:25px; font-weight:600; transition:0.3s;}
+nav a:hover {color:#d9b84a;}
+section {padding:120px 50px 80px; position:relative; z-index:1;}
+section h2 {color:#f0c75e; font-family:'Great Vibes', cursive; font-size:38px; margin-bottom:30px; text-shadow:2px 2px 4px rgba(0,0,0,0.5);}
+.subsection {margin-bottom:50px;}
+.subsection h3 {font-size:28px; color:#f0c75e; margin-bottom:20px; text-shadow:1px 1px 2px rgba(0,0,0,0.4);}
+.separator {height:3px; background:rgba(240,199,94,0.7); margin:40px 0; border-radius:2px; position:relative;}
+.separator::after {content:""; position:absolute; top:-5px; left:0; width:100%; height:10px; background: url('https://i.ibb.co/Wc6zWZ6/wave.png') repeat-x; opacity:0.2;}
+.card-container {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px;}
+.card {background:rgba(240,199,94,0.1); border:1px solid #f0c75e; border-radius:15px; padding:20px; transition:0.3s; position:relative; overflow:hidden; z-index:2;}
+.card:hover {transform:translateY(-8px); box-shadow:0 12px 20px rgba(0,0,0,0.4);}
+.card h3 {font-size:22px; margin-bottom:10px;}
+.card p {font-size:16px; font-weight:bold;}
+footer {text-align:center; padding:25px 50px; background:rgba(1,32,63,0.95); color:#f0c75e;}
+[id] {scroll-margin-top:100px;}
+.note {font-size:14px; color:#d9b84a; margin-bottom:20px;}
+.fish-bg {position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:0;}
+.fish {position:absolute; width:50px; opacity:0.6;}
+.swim-right {animation:swim-right linear infinite;}
+.swim-left {animation:swim-left linear infinite;}
+@keyframes swim-right {0% {left:-60px;} 100% {left:100%;}}
+@keyframes swim-left {0% {left:100%;} 100% {left:-60px;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <h1>Le Hookies</h1>
+  </div>
+  <nav>
+    <a href="#carte"><i class="fas fa-fish"></i> Carte</a>
+    <a href="#formules"><i class="fas fa-utensils"></i> Formules</a>
+    <a href="#entreprise"><i class="fas fa-building"></i> Entreprises</a>
+    <a href="#remises"><i class="fas fa-percent"></i> Remises</a>
+  </nav>
+</header>
+
+<!-- main wrapper that grows to push footer down -->
+<main class="content">
+
+  <!-- Carte Aliments & Boissons -->
+  <section id="carte">
+    <h2>Carte - Aliments & Boissons</h2>
+    <div class="fish-bg" aria-hidden="true">
+      <img src="https://cdn-icons-png.flaticon.com/512/11076/11076968.png" class="fish swim-right" style="top:70px; animation-duration:12s;">
+      <img src="https://cdn-icons-png.flaticon.com/512/3111/3111276.png" class="fish swim-left" style="top:980px; animation-duration:8s;">
+    </div>
+
+    <div class="subsection" id="aliments">
+      <h3>Aliments</h3>
+      <div class="card-container">
+        <div class="card"><h3>Salade de poulpe</h3><p>150 $</p></div>
+        <div class="card"><h3>Bowl de saumon</h3><p>250 $</p></div>
+        <div class="card"><h3>Fish and chips</h3><p>250 $</p></div>
+        <div class="card"><h3>Fish o filet</h3><p>250 $</p></div>
+        <div class="card"><h3>Pavé de saumon</h3><p>370 $</p></div>
+        <div class="card"><h3>Le Pêcheur</h3><p>550 $</p></div>
+        <div class="card"><h3>Filet de bar rôti</h3><p>150 $</p></div>
+        <div class="card"><h3>Tartine de saumon</h3><p>450 $</p></div>
+        <div class="card"><h3>Steak d’espadon</h3><p>350 $</p></div>
+        <div class="card"><h3>Sandwich thon-œuf</h3><p>200 $</p></div>
+        <div class="card"><h3>Sardines grillées</h3><p>150 $</p></div>
+        <div class="card"><h3>Soupe de poisson</h3><p>350 $</p></div>
+      </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="subsection" id="boissons">
+      <h3>Boissons</h3>
+      <div class="card-container">
+        <div class="card"><h3>Bouteille d’eau</h3><p>65 $</p></div>
+        <div class="card"><h3>Canette (soda)</h3><p>100 $</p></div>
+        <div class="card"><h3>Cocktail maison</h3><p>700 $</p></div>
+        <div class="card"><h3>Sprunk Xtrem</h3><p>250 $</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formules -->
+  <section id="formules">
+    <h2>Formules</h2>
+    <div class="fish-bg" aria-hidden="true">
+      <img src="https://cdn-icons-png.flaticon.com/512/5332/5332118.png" class="fish swim-right" style="top:60px; animation-duration:11s;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2916/2916089.png" class="fish swim-left" style="top:800px; animation-duration:8s;">
+      <img src="https://cdn-icons-png.flaticon.com/512/4191/4191509.png" class="fish swim-right" style="top:700px; animation-duration:20s;">
+    </div>
+
+    <div class="subsection" id="petites-formules">
+      <div class="card-container">
+        <div class="card"><h3>Gladius</h3><p>10 Steaks d’espadon & 20 Bouteille d'eau</p><p>4 500 $</p></div>
+        <div class="card"><h3>Marina</h3><p>10 Soupe de poisson & 20 Bouteille d'eau</p><p>4 500 $</p></div>
+        <div class="card"><h3>Kraken</h3><p>10 Salades de poulpe & 20 Bouteille d'eau</p><p>2 500 $</p></div>
+        <div class="card"><h3>Sirène</h3><p>10 Filet de Bar Rôti & 20 Bouteille d'eau</p><p>2 500 $</p></div>
+        <div class="card"><h3>Ocean</h3><p>10 Sandwich Thon & 20 Bouteille d'eau</p><p>3 000 $</p></div>
+        <div class="card"><h3>Thon</h3><p>10 Soupe de poisson & 20 Bouteille d'eau</p><p>4 500 $</p></div>
+        <div class="card"><h3>Corail</h3><p>10 Bowl au Saumon & 20 Bouteille d'eau</p><p>3 800 $</p></div>
+        <div class="card"><h3>Fisher</h3><p>10 Fish and Chips & 20 Bouteille d'eau</p><p>3 800 $</p></div>
+        <div class="card"><h3>Doré</h3><p>10 Fish Ô Filet & 20 Bouteille d'eau</p><p>3 800 $</p></div>
+        <div class="card"><h3>Rosée</h3><p>10 Pavé de saumon & 20 Bouteille d'eau</p><p>5 000 $</p></div>
+        <div class="card"><h3>Gourmande</h3><p>10 Pêcheur & 20 Bouteille d'eau</p><p>6 800 $</p></div>
+        <div class="card"><h3>Fumée</h3><p>10 Tartine de Saumon & 20 Bouteille d'eau</p><p>5 800 $</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pêche -->
+  <section id="peche">
+    <h2>Pêche</h2>
+    <div class="fish-bg" aria-hidden="true">
+      <img src="https://cdn-icons-png.flaticon.com/512/11076/11076968.png" class="fish swim-right" style="top:50px; animation-duration:12s;">
+      <img src="https://cdn-icons-png.flaticon.com/512/3111/3111276.png" class="fish swim-left" style="top:340px; animation-duration:10s;">
+      <img src="https://cdn-icons-png.flaticon.com/512/6681/6681788.png" class="fish swim-right" style="top:410px; animation-duration:15s;">
+    </div>
+    <div class="card-container">
+      <div class="card"><h3>Canne à Pêche</h3><p>600 $</p></div>
+      <div class="card"><h3>Appâts Basique</h3><p>30 $</p></div>
+      <div class="card"><h3>Appâts Carnivore</h3><p>50 $</p></div>
+      <div class="card"><h3>Appâts Avancé</h3><p>80 $</p></div>
+      <div class="card"><h3>Appâts Tropical</h3><p>100 $</p></div>
+    </div>
+  </section>
+
+  <!-- Remises -->
+  <section id="remises">
+    <h2>Options & Remises</h2>
+    <div class="card-container">
+      <div class="card"><p>Prochainement</p></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Le Hookies - Tous droits réservés
+</footer>
+
+</body>
+</html>
